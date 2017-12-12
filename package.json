@@ -1,7 +1,8 @@
 {
-  "name": "boilermaker",
+  "name": "Groovy-or-Gloomy",
   "version": "1.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "description":
+    "An application aimed at building the best playlists with a consistent vibe",
   "engines": {
     "node": ">= 7.0.0"
   },
@@ -9,16 +10,14 @@
   "scripts": {
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
-    "deploy": "script/deploy",
     "lint": "eslint ./ --ignore-path .gitignore",
     "postinstall": "touch secrets.js",
-    "seed": "node script/seed.js",
     "start": "node server",
     "start-dev": "npm run build-client-watch & npm run start-server",
-    "start-server": "NODE_ENV='development' nodemon server -e html,js,scss --ignore public",
-    "test": "NODE_ENV='test' DATABASE_URL='postgres://localhost:5432/boilermaker-test' mocha ./server/**/*.spec.js ./server/**/**/*.spec.js ./client/**/*.spec.js --compilers js:babel-register"
+    "start-server":
+      "NODE_ENV='development' nodemon server -e html,js,scss --ignore public"
   },
-  "author": "",
+  "author": "@mueedc",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.15.3",
@@ -28,12 +27,12 @@
     "express": "^4.14.1",
     "express-session": "^1.15.1",
     "history": "^4.6.3",
+    "lyric-get": "^1.0.3",
     "morgan": "^1.8.1",
     "passport": "^0.3.2",
-    "passport-google-oauth": "^1.0.0",
+    "passport-spotify": "^0.3.1",
     "pg": "^6.1.2",
     "pg-hstore": "^2.3.2",
-    "prop-types": "^15.5.8",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.2",
@@ -42,11 +41,11 @@
     "redux": "^3.6.0",
     "redux-logger": "^2.8.1",
     "redux-thunk": "^2.2.0",
+    "remove": "^0.1.5",
     "sequelize": "^4.3.1",
-    "socket.io": "^2.0.3"
+    "victory": "^0.24.1"
   },
   "devDependencies": {
-    "axios-mock-adapter": "^1.9.0",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.0.1",
     "babel-loader": "^6.2.10",
@@ -54,23 +53,21 @@
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.24.1",
-    "chai": "^3.5.0",
     "css-loader": "^0.26.1",
-    "enzyme": "^3.0.0",
-    "enzyme-adapter-react-16": "^1.0.0",
-    "eslint": "^4.10.0",
-    "eslint-config-fullstack": "^3.0.0",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
     "file-loader": "^0.11.2",
-    "mocha": "^3.3.0",
     "node-sass": "^4.5.0",
     "nodemon": "^1.12.1",
-    "react-test-renderer": "^16.0.0",
     "redux-devtools-extension": "^2.13.2",
-    "redux-mock-store": "^1.2.3",
     "sass-loader": "^6.0.0",
     "style-loader": "^0.13.1",
-    "supertest": "^3.0.0",
     "webpack": "^2.2.1",
     "webpack-livereload-plugin": "^1.0.0"
   }
