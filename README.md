@@ -1,4 +1,4 @@
-## Groovy or Gloomy?
+# Groovy or Gloomy?
 
 Groovy or Gloomy is an application aimed at helping you build the most cohesive playlist imaginable.
 
@@ -8,13 +8,13 @@ With the app you can search for a song with its title and artist and it will ret
 
 I will continue to update G/G from time to time as it is a small pet project I really enjoy working on and sharing with my friends.
 
-# Installation
+## Installation
 
 Clone the repo and run `yarn install` or simply `yarn` to install all dependecies. A database will be created but is not yet functional. I plan to add spotify integration so you can search for the song you are currently listening to as well.
 
 After all the dependencies have been installed all you need to do is run `yarn start-dev` as it is still in development, et violà the app is up and running.
 
-# API Keys
+## API Keys
 
 An important note is that the application requires API keys from spotify and google to run properly. The spotify keys are not required as of this current iteration. The google API keys are required though as the app uses the Google Cloud Natural Language Processing API to create the sentiment analysis.
 
@@ -29,7 +29,7 @@ process.env.GOOGLE_API_KEY = 'YOUR GOOGLE API KEY'
 
 You can make them process environment variables for easy access or make them variables you `require` or `import` into the required files. Without these keys there is no way to communicate with Spotify and Google.
 
-# On the Docket
+## On the Docket
 
 * Round out Spotify integration
 * Deploy to Firebase
