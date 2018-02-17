@@ -10,9 +10,9 @@ I will continue to update G/G from time to time as it is a small pet project I r
 
 ## Installation
 
-Clone the repo and run `yarn install` or simply `yarn` to install all dependecies. A database will be created but is not yet functional. I plan to add spotify integration so you can search for the song you are currently listening to as well.
+Clone the repo and run `npm install` or `yarn` to install all dependecies. A database will be created but is not yet functional. I plan to add spotify integration so you can search for the song you are currently listening to as well.
 
-After all the dependencies have been installed all you need to do is run `yarn start-dev` as it is still in development, et violà the app is up and running.
+After all the dependencies have been installed all you need to do is run `npm run start-dev` or `yarn start-dev` as it is still in development, et violà the app is up and running.
 
 ## API Keys
 
@@ -32,8 +32,6 @@ You can make them process environment variables for easy access or make them var
 ## On the Docket
 
 * Round out Spotify integration
-* Deploy to Firebase
-* Find suitable url
 * Add stylesheets
+* Deploy link
 
-Made by @mueedc
